@@ -26,7 +26,6 @@ public class TernaryTree {
 			root = new Node(dataValue);
 		} else {
 			while (currentNode != null) {
-				
 				if (dataValue < currentNode.data) {
 					if (currentNode.leftChild == null) {
 						currentNode.leftChild = new Node(dataValue);
@@ -34,7 +33,6 @@ public class TernaryTree {
 					} else {
 						currentNode = currentNode.leftChild;
 					}
-					
 				} else if (dataValue == currentNode.data) {
 					if (currentNode.centerChild == null) {
 						currentNode.centerChild = new Node(dataValue);
@@ -42,7 +40,6 @@ public class TernaryTree {
 					} else {
 						currentNode = currentNode.centerChild;
 					}
-					
 				} else {
 					if (currentNode.rightChild == null) {
 						currentNode.rightChild = new Node(dataValue);
