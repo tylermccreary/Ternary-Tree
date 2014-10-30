@@ -4,8 +4,9 @@
  * @author Tyler McCreary
  */
 public class TernaryTree {
-	public static final String EMPTY_TREE = "The tree is empty. There is nothing to delete.";
+	public static final String EMPTY_TREE = "The tree is empty.";
 	public static final String NOT_IN_LIST = " is not in the list.";
+    public static final String EMPTY_DELETE = "The tree is empty. There is nothing to delete.";
 	
 	private Node root;
 
@@ -67,7 +68,7 @@ public class TernaryTree {
 		Node parentNode = null;
 		
 		if (empty()) {
-			throw new IllegalArgumentException(EMPTY_TREE);
+			throw new IllegalArgumentException(EMPTY_DELETE);
 		}
 		while (!deleted) {
 			if (dataValue < currentNode.data) {
@@ -170,7 +171,7 @@ public class TernaryTree {
 	private String toString(Node currentNode) {
 		String result = "";
 		if (empty()) {
-			System.out.print("The tree is empty.");
+			System.out.print(EMPTY_TREE);
 		} else {
 			result = Integer.toString(currentNode.data);
 			if (currentNode.leftChild != null || currentNode.centerChild != null || currentNode.rightChild != null) {
