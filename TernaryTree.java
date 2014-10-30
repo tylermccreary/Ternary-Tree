@@ -6,7 +6,7 @@
 public class TernaryTree {
 	public static final String EMPTY_TREE = "The tree is empty.";
 	public static final String NOT_IN_LIST = " is not in the list.";
-    public static final String EMPTY_DELETE = "The tree is empty. There is nothing to delete.";
+	public static final String EMPTY_DELETE = "The tree is empty. There is nothing to delete.";
 	
 	private Node root;
 
@@ -204,10 +204,10 @@ public class TernaryTree {
 		 * @param dataValue the value of that given Node
 		 */
 		public Node(int dataValue) {
-            data = dataValue;
-            leftChild = null;
-            rightChild = null;
-            centerChild = null;
-        }
+			data = dataValue;
+			leftChild = null;
+			rightChild = null;
+			centerChild = null;
+		}
 	}
 }
