@@ -22,6 +22,7 @@ public class TernaryTree {
 	 */
 	public void insert(int dataValue) {
 		Node currentNode = root;
+
 		if (root == null) {
 			root = new Node(dataValue);
 		} else {
